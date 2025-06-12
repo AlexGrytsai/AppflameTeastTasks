@@ -1,9 +1,497 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram name="Страница — 1" id="FgpT53g7wKW_DbKnTU13">
-    <mxGraphModel dx="1410" dy="833" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="6887" dy="4030" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-166" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="14" y="13" width="2967" height="2059" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-159" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="2073" y="396" width="148" height="301" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-145" value="&lt;b&gt;&lt;u&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Massege Broker&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=2;spacingLeft=4;shadow=1;fillColor=#b1ddf0;strokeColor=#10739e;fillStyle=auto;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-159">
+          <mxGeometry width="148" height="301" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-146" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.topic_2;fillColor=#00FF00;gradientColor=none;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-159">
+          <mxGeometry x="27.5" y="222" width="93" height="58.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-157" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.topic_2;fillColor=#FFFF66;gradientColor=none;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-159">
+          <mxGeometry x="27.5" y="149" width="93" height="58.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-158" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.topic_2;fillColor=#FF0000;gradientColor=none;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-159">
+          <mxGeometry x="27.5" y="68" width="93" height="58.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-131" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="460" y="174" width="1392" height="812" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-31" value="&lt;b&gt;&lt;u&gt;Moderation Service&lt;/u&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;fontSize=14;rounded=0;shadow=1;align=left;verticalAlign=top;spacingTop=7;spacingLeft=7;fillColor=#b0e3e6;strokeColor=none;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-131">
+          <mxGeometry width="1392" height="812" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-32" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-131">
+          <mxGeometry x="1156.0677966101694" y="664.517745302714" width="132.82390007223657" height="108.91559805923399" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-49" value="&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;If the analysis fails to accurately determine whether the message is completely safe, it is sent for manual verification.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;To assess whether a message is Safe or Offensive, you can develop a specific system of metrics or rely entirely on the results of the analysis provided by LLMs.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-131">
+          <mxGeometry x="1066" y="20" width="276" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-84" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="1229" y="544" width="276" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-80" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;We do a summation of all results to determine whether the message passes the specified criteria. For this purpose, we can use external LLMs.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-84">
+          <mxGeometry width="276" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-81" value="Summarize of LLMs answers" style="whiteSpace=wrap;html=1;fontSize=14;rounded=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-84">
+          <mxGeometry x="82" y="74" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-67" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="624" y="732" width="276" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-64" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;If the message contains a link to external resources, then you need to check the content of the link.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-67">
+          <mxGeometry width="276" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-65" value="External Resource Analysis" style="whiteSpace=wrap;html=1;fontSize=14;rounded=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-67">
+          <mxGeometry x="20.5" y="61" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-55" value="" style="group;shadow=1;" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="929" y="576" width="237" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-50" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;Each prompt contains specific criteria for evaluating the message. This allows you to easily add new evaluation rules.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=12;spacingLeft=110;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-55">
+          <mxGeometry width="237" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-46" value="" style="group;shadow=1;" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-55">
+          <mxGeometry x="13" y="19" width="83" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-42" value="&lt;b&gt;Prompt 1&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-46">
+          <mxGeometry width="83" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-44" value="&lt;b&gt;Prompt 2&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-46">
+          <mxGeometry y="40" width="83" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-45" value="&lt;b&gt;...&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-46">
+          <mxGeometry y="80" width="83" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-47" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="38" y="1118" width="343" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-15" value="&lt;i&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;We can use third-party services that are designed for a general assessment of the text (emotions, tonality, etc.). Receiving this data makes it possible to assess the general mood of the message and use it for further moderation.&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-47">
+          <mxGeometry width="343" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-8" value="AWS Comprehend&lt;hr&gt;&lt;div&gt;GCP&amp;nbsp;Natural Language&lt;/div&gt;&lt;hr&gt;&lt;div&gt;Azure Text Analytics&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=default;gradientColor=none;fillStyle=solid;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-47">
+          <mxGeometry x="28" y="87" width="162" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-1" target="BO5SD2HQML6EgRFuYqK_-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-1" value="&lt;font&gt;&lt;b&gt;Message&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fontSize=14;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="267" y="475" width="99" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-48" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="859" width="313" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-51" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-48">
+          <mxGeometry width="313" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-21" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;To automatically classify user text, you can use &lt;b&gt;Google Jigsaw&#39;s Perspective API&lt;/b&gt;, a specialized service designed to assess toxicity, aggression, threats, and inappropriate behavior in messages.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-51">
+          <mxGeometry width="313" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-22" value="&lt;b&gt;Perspective API&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=default;gradientColor=none;fillStyle=solid;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-51">
+          <mxGeometry x="28" y="87" width="162" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-53" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="624" y="255" width="275" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-25" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;Allows we to get a message rating from a third-party service. The results will be used in a comprehensive rating.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-53">
+          <mxGeometry width="275" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-18" value="Message analysis by a third-party service" style="whiteSpace=wrap;html=1;fontSize=14;rounded=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-53">
+          <mxGeometry x="20.5" y="74" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-54" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="624" y="544" width="276" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-35" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;We analyze the message using LLM. We can use several independent queries to LLM to evaluate the message according to different criteria that we set in the prompt.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-54">
+          <mxGeometry width="276" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-36" value="Message analysis by LLMs" style="whiteSpace=wrap;html=1;fontSize=14;rounded=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-54">
+          <mxGeometry x="20.5" y="74" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-36" target="BO5SD2HQML6EgRFuYqK_-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-1" target="BO5SD2HQML6EgRFuYqK_-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-1" target="BO5SD2HQML6EgRFuYqK_-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="554.5" y="420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-1" target="BO5SD2HQML6EgRFuYqK_-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="554.5" y="420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;html=1;textShadow=0;labelBorderColor=none;fontColor=#007FFF;strokeColor=#007FFF;endArrow=none;startFill=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-5" target="BO5SD2HQML6EgRFuYqK_-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#007FFF;curved=1;endArrow=none;startFill=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-22" target="BO5SD2HQML6EgRFuYqK_-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-61" value="" style="group;shadow=1;" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="969" y="1112" width="413" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-90" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-61">
+          <mxGeometry width="413" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-59" value="&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;We can use different LLMs for each prompt, taking into account its specifics.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;For special cases, we can use our own LLM, which will be trained on our dataset and will be able to perform analysis according to specific requirements.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;The ability to use different models for different use cases provides greater flexibility in applying new evaluation options and expanding functionality.&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;For these purposes, I would choose the model from &lt;b&gt;&lt;u&gt;OpenAI omni-moderation or text-moderation&lt;/u&gt;&lt;/b&gt;. These models are specially created for moderation and can cope with this task better.&lt;/span&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=bottom;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-90">
+          <mxGeometry width="413" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-60" value="&lt;b&gt;OpenAI API&lt;/b&gt;&lt;hr&gt;&lt;div&gt;&lt;b&gt;Anthropic API&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;&lt;b&gt;Other ready-made LLM models...&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Own LLM&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=default;gradientColor=none;fillStyle=solid;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-90">
+          <mxGeometry x="17" y="20" width="232" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#007FFF;strokeColor=#007FFF;endArrow=none;startFill=1;curved=1;startArrow=oval;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-50" target="BO5SD2HQML6EgRFuYqK_-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-72" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="464" y="1116" width="413" height="547" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-69" value="&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Using multiple services to analyze third-party resources will allow you to get a more accurate result and protect users from unfavorable content.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;u&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;Web Risk API (Google Cloud Platform)&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;Web Risk API allows you to check whether a URL contains malicious or phishing content. Uses the same database as Google Safe Browsing, which ensures high reliability. Suitable for preventing transitions to dangerous sites.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;u&gt;VirusTotal API&lt;/u&gt;&lt;/b&gt;&lt;br&gt;VirusTotal scans URLs and files with over 70 antivirus and threat analysis engines. Provides detailed information about the maliciousness, behavior and reputation of the link. Ideal for deep analysis of suspicious resources.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;IPQualityScore URL Scanner&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;IPQualityScore evaluates URLs by many parameters: maliciousness, phishing, shock content, spam, NSFW, etc. Quickly returns the result with a risk rating. Great for real-time and mass checking.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u&gt;URLScan.io API&lt;/u&gt;&lt;/b&gt;&lt;br&gt;URLScan takes a snapshot of your site, analyzes its structure and resources, and provides loading visualization. Allows you to identify hidden redirects, suspicious scripts, and external dependencies. Useful for analyzing complex or dynamic pages.&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=bottom;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-72">
+          <mxGeometry width="413" height="547" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-70" value="&lt;b&gt;Web Risk (GCP)&lt;/b&gt;&lt;hr&gt;&lt;div&gt;&lt;b&gt;VirusTotal API&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;&lt;b&gt;IPQualityScore URL Scanner&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;URLScan.io API&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=default;gradientColor=none;fillStyle=solid;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-72">
+          <mxGeometry x="17" y="19" width="232" height="120.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#007FFF;endArrow=none;startFill=0;curved=1;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-65" target="BO5SD2HQML6EgRFuYqK_-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-65" target="BO5SD2HQML6EgRFuYqK_-81">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1179" y="823" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1185" y="823" />
+              <mxPoint x="1185" y="648" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=oval;startFill=1;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-50" target="BO5SD2HQML6EgRFuYqK_-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-81" target="BO5SD2HQML6EgRFuYqK_-104">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1501" y="648.5000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-91" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="1423" y="1111" width="413" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-87" value="&lt;i style=&quot;font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;For these purposes, I would choose the model from&amp;nbsp;&lt;b&gt;&lt;u&gt;OpenAI GPT-4.1&lt;/u&gt;&lt;/b&gt;.&amp;nbsp;&lt;/span&gt;&lt;/i&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;Provides high accuracy and deep contextual understanding, making it ideal for reliably summarizing complex and diverse information.&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=bottom;spacingTop=3;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;spacingRight=3;spacingBottom=3;spacing=0;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-91">
+          <mxGeometry width="413" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-88" value="&lt;b&gt;OpenAI API&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=default;gradientColor=none;fillStyle=solid;spacingTop=12;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-91">
+          <mxGeometry x="17" y="20" width="232" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-5" target="BO5SD2HQML6EgRFuYqK_-81">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1185" y="458" />
+              <mxPoint x="1185" y="648" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-94" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Needs Human Review?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FF8000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="1560" y="429" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-18" target="BO5SD2HQML6EgRFuYqK_-81">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1185" y="359" />
+              <mxPoint x="1185" y="648" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#007FFF;curved=1;endArrow=none;startFill=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-81" target="BO5SD2HQML6EgRFuYqK_-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-7" value="&lt;i&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 10px;&quot;&gt;Conducts a general assessment of the message (tone, emotions)&lt;/font&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=bottom;spacingTop=1;spacingLeft=3;fillColor=#fff2cc;strokeColor=none;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="626" y="416" width="271" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-5" value="General analysis of the message" style="whiteSpace=wrap;html=1;fontSize=14;rounded=1;shadow=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="644.5" y="428" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-104" target="BO5SD2HQML6EgRFuYqK_-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-148" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;False&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-147">
+          <mxGeometry x="-0.2105" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-104" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;is_safe?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FF8000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="1580" y="608" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#00FF00;strokeWidth=2;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" target="BO5SD2HQML6EgRFuYqK_-142" source="BO5SD2HQML6EgRFuYqK_-104">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1622" y="648" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-141" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;True&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-140">
+          <mxGeometry x="-0.217" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-142" value="" style="shape=message;html=1;html=1;outlineConnect=0;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#00FF00;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="1902" y="628" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=8 8;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-142" target="BO5SD2HQML6EgRFuYqK_-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#00FF00;strokeWidth=2;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" target="BO5SD2HQML6EgRFuYqK_-151" source="BO5SD2HQML6EgRFuYqK_-94">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1692" y="434" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-150" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;True&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-149">
+          <mxGeometry x="-0.217" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-151" value="" style="shape=message;html=1;html=1;outlineConnect=0;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#FFFF66;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="1902" y="469" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=8 8;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-151" target="BO5SD2HQML6EgRFuYqK_-157">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2133" y="433" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1997" y="489" />
+              <mxPoint x="1997" y="574" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" target="BO5SD2HQML6EgRFuYqK_-155" source="BO5SD2HQML6EgRFuYqK_-94">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1664" y="266" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-154" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;False&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-153">
+          <mxGeometry x="-0.217" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-155" value="" style="shape=message;html=1;html=1;outlineConnect=0;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#FF0000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry x="1902" y="373" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=8 8;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-155" target="BO5SD2HQML6EgRFuYqK_-158">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2117" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-166" source="BO5SD2HQML6EgRFuYqK_-161" target="BO5SD2HQML6EgRFuYqK_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-161" value="&lt;b&gt;&lt;u&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Massege Broker&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=2;spacingLeft=4;shadow=1;fillColor=#b1ddf0;strokeColor=#10739e;fillStyle=auto;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-166">
+          <mxGeometry y="343.5" width="148" height="301" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-265" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1818" y="1279" width="1400" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-263" value="&lt;h2 data-end=&quot;200&quot; data-start=&quot;103&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;Architecture Overview&lt;/font&gt;&lt;/h2&gt;&lt;p data-end=&quot;349&quot; data-start=&quot;202&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;This architecture is designed to distribute user traffic and handle messages with high fault tolerance and minimal latency across multiple regions.&lt;/font&gt;&lt;/p&gt;&lt;h3 data-end=&quot;369&quot; data-start=&quot;351&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;Components:&lt;/font&gt;&lt;/h3&gt;&lt;ul data-end=&quot;1551&quot; data-start=&quot;371&quot;&gt;&lt;li data-end=&quot;633&quot; data-start=&quot;371&quot;&gt;&lt;p data-end=&quot;633&quot; data-start=&quot;373&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;397&quot; data-start=&quot;373&quot;&gt;Global Load Balancer&lt;/strong&gt;&lt;br data-end=&quot;400&quot; data-start=&quot;397&quot;&gt;A global load balancer (e.g., GCP Load Balancer, AWS Global Accelerator) receives incoming traffic from users around the world and routes it to the nearest or most available region, ensuring fast and resilient traffic distribution.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;820&quot; data-start=&quot;635&quot;&gt;&lt;p data-end=&quot;820&quot; data-start=&quot;637&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;673&quot; data-start=&quot;637&quot;&gt;Regional Gateway / Load Balancer&lt;/strong&gt;&lt;br data-end=&quot;676&quot; data-start=&quot;673&quot;&gt;Balances the load among applications within each region (e.g., GKE, ECS, or VM instances), providing scalability and regional fault tolerance.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;1003&quot; data-start=&quot;822&quot;&gt;&lt;p data-end=&quot;1003&quot; data-start=&quot;824&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;870&quot; data-start=&quot;824&quot;&gt;Application Instances (App A, App B, etc.)&lt;/strong&gt;&lt;br data-end=&quot;873&quot; data-start=&quot;870&quot;&gt;These process user requests and communicate only with the local message broker in their region, which minimizes network latency.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;1225&quot; data-start=&quot;1005&quot;&gt;&lt;p data-end=&quot;1225&quot; data-start=&quot;1007&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;1032&quot; data-start=&quot;1007&quot;&gt;Local Message Brokers&lt;/strong&gt;&lt;br data-end=&quot;1035&quot; data-start=&quot;1032&quot;&gt;Each region has its own dedicated message broker (e.g., Kafka, RabbitMQ, or NATS), enabling fast message delivery and local resilience. These brokers operate independently from each other.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;1551&quot; data-start=&quot;1227&quot;&gt;&lt;p data-end=&quot;1551&quot; data-start=&quot;1229&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;1265&quot; data-start=&quot;1229&quot;&gt;Inter-region Message Replication&lt;/strong&gt;&lt;br data-end=&quot;1268&quot; data-start=&quot;1265&quot;&gt;To ensure consistency and cross-region communication, a replication mechanism (e.g., Kafka MirrorMaker 2, RabbitMQ Federation, NATS JetStream) is configured. It synchronizes data across brokers, supporting use cases like distributed consumers, analytics, or cross-regional storage.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 data-end=&quot;1573&quot; data-start=&quot;1558&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;Benefits:&lt;/font&gt;&lt;/h3&gt;&lt;ul data-end=&quot;1903&quot; data-start=&quot;1575&quot;&gt;&lt;li data-end=&quot;1661&quot; data-start=&quot;1575&quot;&gt;&lt;p data-end=&quot;1661&quot; data-start=&quot;1577&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;1600&quot; data-start=&quot;1580&quot;&gt;Geo-distribution&lt;/strong&gt; — User traffic is processed in the closest available region.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;1729&quot; data-start=&quot;1662&quot;&gt;&lt;p data-end=&quot;1729&quot; data-start=&quot;1664&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;1681&quot; data-start=&quot;1666&quot;&gt;Low latency&lt;/strong&gt; — Local message brokers reduce round-trip time.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;1811&quot; data-start=&quot;1730&quot;&gt;&lt;p data-end=&quot;1811&quot; data-start=&quot;1732&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;1764&quot; data-start=&quot;1735&quot;&gt;Reliable message delivery&lt;/strong&gt; — Failures in one region do not impact others.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;1903&quot; data-start=&quot;1812&quot;&gt;&lt;p data-end=&quot;1903&quot; data-start=&quot;1814&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;strong data-end=&quot;1841&quot; data-start=&quot;1817&quot;&gt;Flexible scalability&lt;/strong&gt; — Horizontally across regions and vertically within a region.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingTop=3;spacingLeft=6;spacingRight=950;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-265">
+          <mxGeometry width="1400" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-264" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-265">
+          <mxGeometry x="470" y="21" width="885" height="924" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-230" value="&lt;b&gt;&lt;u&gt;Region A&lt;/u&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#82b366;shadow=1;fillColor=#d5e8d4;align=left;verticalAlign=top;fontSize=17;spacingTop=4;spacingLeft=5;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-264">
+          <mxGeometry y="128" width="408" height="796" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-192" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-264">
+          <mxGeometry x="29" y="493" width="347" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-184" value="&lt;font face=&quot;Courier New&quot;&gt;As the load increases, we can launch additional Dokeo images. This will allow us to adjust resources depending on the incoming load.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;shadow=1;align=left;verticalAlign=bottom;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-192">
+          <mxGeometry width="347" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-181" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-192">
+          <mxGeometry x="202.3499999999999" y="32" width="107.31" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-185" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-192">
+          <mxGeometry x="10" y="32" width="107.31" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-191" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-192">
+          <mxGeometry x="125" y="57" width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-186" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-191">
+          <mxGeometry width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-187" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-191">
+          <mxGeometry x="7" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-188" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-191">
+          <mxGeometry x="28.5" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-189" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-191">
+          <mxGeometry x="49" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-172" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Regional Gateway&lt;/b&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gateway;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-264">
+          <mxGeometry x="164" y="157" width="76" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-174" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Global Load Balancer&lt;/b&gt;&lt;/font&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.application_load_balancer;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-264">
+          <mxGeometry x="403" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-264" source="BO5SD2HQML6EgRFuYqK_-204" target="BO5SD2HQML6EgRFuYqK_-184">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-218" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-264">
+          <mxGeometry x="28.5" y="287" width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-204" value="&lt;font face=&quot;Courier New&quot;&gt;As the load increases, we can launch additional Message Brokers. This will allow us to regulate resources depending on the incoming load.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;shadow=1;align=left;verticalAlign=bottom;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-218">
+          <mxGeometry width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-177" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Inbound Broker&lt;/b&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-218">
+          <mxGeometry x="222.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-197" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-218">
+          <mxGeometry x="138.5" y="36" width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-198" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-197">
+          <mxGeometry width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-199" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-197">
+          <mxGeometry x="7" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-200" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-197">
+          <mxGeometry x="28.5" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-201" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-197">
+          <mxGeometry x="49" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-203" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Inbound Broker&lt;/b&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-218">
+          <mxGeometry x="42.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-228" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-264">
+          <mxGeometry x="29" y="724" width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-220" value="&lt;font face=&quot;Courier New&quot;&gt;As the load increases, we can launch additional Message Brokers. This will allow us to regulate resources depending on the incoming load.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;shadow=1;align=left;verticalAlign=bottom;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-228">
+          <mxGeometry width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-221" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Outbound Broker&lt;/b&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-228">
+          <mxGeometry x="222.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-222" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-228">
+          <mxGeometry x="138.5" y="36" width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-223" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-222">
+          <mxGeometry width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-224" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-222">
+          <mxGeometry x="7" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-225" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-222">
+          <mxGeometry x="28.5" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-226" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-222">
+          <mxGeometry x="49" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-227" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Outbound Broker&lt;/b&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-228">
+          <mxGeometry x="42.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-229" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-264" source="BO5SD2HQML6EgRFuYqK_-184" target="BO5SD2HQML6EgRFuYqK_-220">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-262" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-264">
+          <mxGeometry x="477" y="128" width="408" height="796" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-231" value="&lt;b&gt;&lt;u&gt;Region B&lt;/u&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#82b366;shadow=1;fillColor=#d5e8d4;align=left;verticalAlign=top;fontSize=17;spacingTop=4;spacingLeft=5;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-262">
+          <mxGeometry width="408" height="796" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-232" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-262">
+          <mxGeometry x="29" y="365" width="347" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-233" value="&lt;font face=&quot;Courier New&quot;&gt;As the load increases, we can launch additional Dokeo images. This will allow us to adjust resources depending on the incoming load.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;shadow=1;align=left;verticalAlign=bottom;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-232">
+          <mxGeometry width="347" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-234" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-232">
+          <mxGeometry x="202.3499999999999" y="32" width="107.31" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-235" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-232">
+          <mxGeometry x="10" y="32" width="107.31" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-236" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-232">
+          <mxGeometry x="125" y="57" width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-237" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-236">
+          <mxGeometry width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-238" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-236">
+          <mxGeometry x="7" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-239" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-236">
+          <mxGeometry x="28.5" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-240" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-236">
+          <mxGeometry x="49" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-241" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Regional Gateway&lt;/b&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gateway;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-262">
+          <mxGeometry x="164" y="29" width="76" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-262" source="BO5SD2HQML6EgRFuYqK_-244" target="BO5SD2HQML6EgRFuYqK_-233">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-243" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-262">
+          <mxGeometry x="28.5" y="159" width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-244" value="&lt;font face=&quot;Courier New&quot;&gt;As the load increases, we can launch additional Message Brokers. This will allow us to regulate resources depending on the incoming load.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;shadow=1;align=left;verticalAlign=bottom;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-243">
+          <mxGeometry width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-245" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Inbound Broker&lt;/b&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-243">
+          <mxGeometry x="222.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-246" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-243">
+          <mxGeometry x="138.5" y="36" width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-247" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-246">
+          <mxGeometry width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-248" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-246">
+          <mxGeometry x="7" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-249" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-246">
+          <mxGeometry x="28.5" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-250" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-246">
+          <mxGeometry x="49" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-251" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Inbound Broker&lt;/b&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-243">
+          <mxGeometry x="42.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-252" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-262">
+          <mxGeometry x="29" y="596" width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-253" value="&lt;font face=&quot;Courier New&quot;&gt;As the load increases, we can launch additional Message Brokers. This will allow us to regulate resources depending on the incoming load.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;shadow=1;align=left;verticalAlign=bottom;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-252">
+          <mxGeometry width="347" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-254" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Outbound Broker&lt;/b&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-252">
+          <mxGeometry x="222.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-255" value="" style="group" vertex="1" connectable="0" parent="BO5SD2HQML6EgRFuYqK_-252">
+          <mxGeometry x="138.5" y="36" width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-256" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-255">
+          <mxGeometry width="70" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-257" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-255">
+          <mxGeometry x="7" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-258" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-255">
+          <mxGeometry x="28.5" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-259" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-255">
+          <mxGeometry x="49" y="7" width="13" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-260" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Outbound Broker&lt;/b&gt;&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mq_broker;" vertex="1" parent="BO5SD2HQML6EgRFuYqK_-252">
+          <mxGeometry x="42.5" y="15" width="78" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="BO5SD2HQML6EgRFuYqK_-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="BO5SD2HQML6EgRFuYqK_-262" source="BO5SD2HQML6EgRFuYqK_-233" target="BO5SD2HQML6EgRFuYqK_-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
