@@ -1,4 +1,5 @@
 import logging
+from typing import List
 
 import pandas as pd
 from pandas import DataFrame
@@ -14,7 +15,6 @@ class DataPreparation:
         self.training_data = self._download_data_for_training(
             path_to_data_for_training
         )
-        self._add_binary_label()
 
     @staticmethod
     def _download_data_for_training(path: str) -> DataFrame:
@@ -31,28 +31,24 @@ class DataPreparation:
         """
         return pd.read_csv(path)
 
-    def _add_binary_label(self) -> None:
+    def add_binary_label(self, toxicity_list_column: List[str]) -> None:
         """
-        Creates a binary label by summing the number of toxic labels
-        (toxic, severe_toxic, obscene, threat, insult, identity_hate) and
-        checking if the sum is greater than 0. The result is stored in
-        the 'toxic_binary' column of the training data.
+        Creates a new binary label column in the training data from a list of
+        toxicity-related columns.
+
+        The binary label is created by summing the values in the specified
+        columns and checking if the sum is greater than 0. If the sum is
+        greater than 0, the binary label is set to 1, otherwise it is set to 0.
+
+        Parameters:
+        toxicity_list_column (List[str]): A list of column names to use for
+                                          creating the binary label.
 
         Returns:
-            None
+        None
         """
         logger.info("Adding binary label")
         self.training_data["toxic_binary"] = (
-            self.training_data[
-                [
-                    "toxic",
-                    "severe_toxic",
-                    "obscene",
-                    "threat",
-                    "insult",
-                    "identity_hate",
-                ]
-            ].sum(axis=1)
-            > 0
+            self.training_data[toxicity_list_column].sum(axis=1) > 0
         ).astype(int)
         logger.info(f"Total number of toxic labels: {len(self.training_data)}")
