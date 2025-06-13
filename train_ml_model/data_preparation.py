@@ -22,7 +22,7 @@ class DataPreparation:
         )
 
     @staticmethod
-    def download_nltk_resources(resources: List[str]):
+    def download_nltk_resources(resources: List[str]) -> bool:
         """
         Downloads specified NLTK resources.
 
@@ -33,9 +33,15 @@ class DataPreparation:
         This method logs the download process and ensures that the required
         NLTK resources are available for text processing tasks.
         """
-        for resource in resources:
-            logger.info(f"Downloading resource: {resource}")
-            nltk.download(resource)
+        try:
+            for resource in resources:
+                logger.info(f"Downloading resource: {resource}")
+                nltk.download(resource)
+            logger.info("NLTK resources downloaded successfully.")
+            return True
+        except Exception as exc:
+            logger.error(f"Failed to download NLTK resource. Exception: {exc}")
+            raise exc
 
     @staticmethod
     def download_data_for_training(path: str) -> DataFrame:
