@@ -1,6 +1,6 @@
 import logging
 import re
-from typing import List, Set, Optional
+from typing import List, Set, Optional, Tuple
 
 import nltk
 import pandas as pd
@@ -32,7 +32,7 @@ class DataPreparation:
         self.y_train = None
         self.y_test = None
         self.x_train_vectorized = None
-        self.X_test_vectorized = None
+        self.x_test_vectorized = None
 
     @staticmethod
     def _download_data_for_training(path: str) -> DataFrame:
@@ -108,20 +108,24 @@ class DataPreparation:
         logger.info(f"Train data shape: {self.x_train.shape[0]}")
         logger.info(f"Test data shape: {self.x_test.shape[0]}")
 
-    def preprocess_datasets(self):
-        """
-        Preprocesses the training and test datasets by applying the
-        `_preprocess_text` method to each comment in the datasets.
+    def vectorize_data(self) -> None:
+        logger.info("Vectorizing data")
 
-        The method logs the start and end of the preprocessing process.
+        x_train_preprocessed, x_test_preprocessed = self._preprocess_datasets()
+        self.x_train_vectorized = self.vectorizer.fit_transform(
+            x_train_preprocessed
+        )
+        self.x_test_vectorized = self.vectorizer.transform(x_test_preprocessed)
 
-        Returns:
-        None
-        """
+        logger.info("Data vectorized successfully")
+
+    def _preprocess_datasets(self) -> Tuple[DataFrame, DataFrame]:
         logger.info("Preprocessing datasets")
-        self.x_train = self.x_train.apply(self._preprocess_text)
-        self.x_test = self.x_test.apply(self._preprocess_text)
+        x_train_preprocessed = self.x_train.apply(self._preprocess_text)
+        x_test_preprocessed = self.x_test.apply(self._preprocess_text)
         logger.info("Datasets preprocessed successfully")
+
+        return x_train_preprocessed, x_test_preprocessed
 
     def _preprocess_text(self, text: str) -> str:
         """
@@ -188,3 +192,7 @@ class DataPreparation:
         List[str]: A list of lemmatized word tokens.
         """
         return [self.lemmatizer.lemmatize(word) for word in tokens]
+
+    def _apply_text_preprocessing(self):
+        self.x_train = self.x_train.apply(self._preprocess_text)
+        self.x_test = self.x_test.apply(self._preprocess_text)
