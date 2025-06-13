@@ -31,6 +31,8 @@ class DataPreparation:
         self.x_test = None
         self.y_train = None
         self.y_test = None
+        self.x_train_vectorized = None
+        self.X_test_vectorized = None
 
     @staticmethod
     def _download_data_for_training(path: str) -> DataFrame:
