@@ -2,6 +2,8 @@ import logging
 from typing import Optional, List
 
 import nltk
+import pandas as pd
+from pandas import DataFrame
 
 logger = logging.getLogger(__name__)
 
@@ -30,3 +32,18 @@ class DataPreparation:
         for resource in resources:
             logger.info(f"Downloading resource: {resource}")
             nltk.download(resource)
+
+    @staticmethod
+    def download_data_for_training(path: str = "train.csv") -> DataFrame:
+        """
+        Downloads a CSV file containing data for training the model, and
+        returns a Pandas DataFrame with the downloaded data.
+
+        Parameters:
+        path (str): The path to the CSV file to download. Defaults to
+                    "train.csv".
+
+        Returns:
+        DataFrame: A Pandas DataFrame containing the downloaded data.
+        """
+        return pd.read_csv(path)
