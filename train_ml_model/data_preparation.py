@@ -92,5 +92,5 @@ class DataPreparation:
             )
         )
 
-        logger.info(f"Train data shape: {self.x_train.shape}")
-        logger.info(f"Test data shape: {self.x_test.shape}")
+        logger.info(f"Train data shape: {self.x_train.shape[0]}")
+        logger.info(f"Test data shape: {self.x_test.shape[0]}")
