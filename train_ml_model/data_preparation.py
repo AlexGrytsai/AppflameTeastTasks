@@ -129,9 +129,11 @@ class DataPreparation:
         Returns:
         str: The preprocessed string.
         """
+        logger.info("Preprocessing text")
         clean_text = self._clean_text(text)
         tokens = self._tokenize_text(clean_text)
         lemmatized_tokens = self._lemmatize_text(tokens)
+        logger.info("Text preprocessed successfully")
 
         return " ".join(lemmatized_tokens)
 
