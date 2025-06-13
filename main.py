@@ -17,3 +17,5 @@ if __name__ == "__main__":
     nltk_data.download_nltk_resources()
 
     data_preparation.add_binary_label(toxicity_list_column)
+
+    data_preparation.separate_data_into_train_and_test()
