@@ -103,15 +103,20 @@ Train an ML model to classify text as toxic/non-toxic.
 
 ## Launch
 
-1. Install dependencies:
+1. Clone the repository from GitHub:
+   ```
+   git clone https://github.com/AlexGrytsai/AppflameTeastTasks.git
+   cd AppflameTeastTasks
+   ```
+2. Install dependencies:
    ```
    poetry install
    ```
-2. Activate virtual environment (optional):
+3. Activate virtual environment (optional):
    ```
    poetry shell
    ```
-3. Start training:
+4. Start training:
    ```
    poetry run python main.py
    ``` 
