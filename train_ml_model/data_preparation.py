@@ -7,6 +7,7 @@ import pandas as pd
 from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
 from pandas import DataFrame
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
 logger = logging.getLogger(__name__)
@@ -18,12 +19,14 @@ class DataPreparation:
         path_to_data_for_training: str = "train.csv",
         stop_words: Optional[Set[str]] = None,
         lemmatizer: Optional[WordNetLemmatizer] = None,
+        vectorizer: Optional[TfidfVectorizer] = None,
     ) -> None:
         self.training_data = self._download_data_for_training(
             path_to_data_for_training
         )
         self.stop_words = stop_words or set(stopwords.words("english"))
         self.lemmatizer = lemmatizer or WordNetLemmatizer()
+        self.vectorizer = vectorizer or TfidfVectorizer()
         self.x_train = None
         self.x_test = None
         self.y_train = None
