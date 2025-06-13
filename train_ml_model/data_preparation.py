@@ -107,8 +107,19 @@ class DataPreparation:
         logger.info("Preprocessing datasets")
         self.x_train = self.x_train.apply(self._preprocess_text)
         self.x_test = self.x_test.apply(self._preprocess_text)
+        logger.info("Datasets preprocessed successfully")
 
     def _preprocess_text(self, text: str) -> str:
+        """
+        Preprocesses a string by cleaning it, tokenizing it, lemmatizing the
+        tokens, and joining them back into a string.
+
+        Parameters:
+        text (str): The string to preprocess.
+
+        Returns:
+        str: The preprocessed string.
+        """
         clean_text = self._clean_text(text)
         tokens = self._tokenize_text(clean_text)
         lemmatized_tokens = self._lemmatize_text(tokens)
@@ -117,6 +128,16 @@ class DataPreparation:
 
     @staticmethod
     def _clean_text(text: str) -> str:
+        """
+        Cleans a string by converting it to lowercase, removing URLs, special
+        characters, and numbers.
+
+        Parameters:
+        text (str): The string to clean.
+
+        Returns:
+        str: The cleaned string.
+        """
         text = text.lower()
 
         text = re.sub(r"http\S+|www\S+|https\S+", "", text, flags=re.MULTILINE)
@@ -129,7 +150,25 @@ class DataPreparation:
 
     @staticmethod
     def _tokenize_text(text: str) -> List[str]:
+        """
+        Tokenizes a string into a list of words using NLTK's word tokenizer.
+    
+        Parameters:
+        text (str): The string to be tokenized.
+    
+        Returns:
+        List[str]: A list of word tokens extracted from the input string.
+        """
         return nltk.word_tokenize(text)
 
     def _lemmatize_text(self, tokens: List[str]) -> List[str]:
+        """
+        Lemmatizes a list of word tokens using NLTK's WordNet lemmatizer.
+
+        Parameters:
+        tokens (List[str]): A list of word tokens to be lemmatized.
+
+        Returns:
+        List[str]: A list of lemmatized word tokens.
+        """
         return [self.lemmatizer.lemmatize(word) for word in tokens]
