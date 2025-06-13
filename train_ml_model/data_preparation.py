@@ -2,6 +2,7 @@ import logging
 from typing import List, Set, Optional
 
 import pandas as pd
+from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
@@ -14,11 +15,13 @@ class DataPreparation:
         self,
         path_to_data_for_training: str = "train.csv",
         stop_words: Optional[Set[str]] = None,
+        lemmatizer: Optional[WordNetLemmatizer] = None,
     ) -> None:
         self.training_data = self._download_data_for_training(
             path_to_data_for_training
         )
         self.stop_words = stop_words or set(stopwords.words("english"))
+        self.lemmatizer = lemmatizer or WordNetLemmatizer()
         self.x_train = None
         self.x_test = None
         self.y_train = None
