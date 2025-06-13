@@ -20,4 +20,4 @@ if __name__ == "__main__":
 
     data_preparation.separate_data_into_train_and_test()
 
-    data_preparation.preprocess_datasets()
+    data_preparation.vectorize_data()
