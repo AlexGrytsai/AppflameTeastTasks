@@ -14,7 +14,9 @@ class DataPreparation:
         path_to_data_for_training: str = "train.csv",
         nltk_resources: Optional[List[str]] = None,
     ) -> None:
-        self.path_to_data_for_training = path_to_data_for_training
+        self.training_data = self._download_data_for_training(
+            path_to_data_for_training
+        )
         self.nltk_resources = (
             nltk_resources
             if nltk_resources is not None
@@ -44,7 +46,7 @@ class DataPreparation:
             raise exc
 
     @staticmethod
-    def download_data_for_training(path: str) -> DataFrame:
+    def _download_data_for_training(path: str) -> DataFrame:
         """
         Downloads a CSV file containing data for training the model, and
         returns a Pandas DataFrame with the downloaded data.
