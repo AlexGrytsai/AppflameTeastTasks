@@ -1,4 +1,5 @@
 from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import MultinomialNB
 
 import settings  # noqa
 from train_ml_model import DataPreparation, NLTKResources, ModelML
@@ -30,3 +31,7 @@ if __name__ == "__main__":
         data_for_training,
     )
     model_lr.get_assessment_model_performance()
+
+    # Multinomial Naive Bayes model
+    model_mnb = ModelML(MultinomialNB(), data_for_training)
+    model_mnb.get_assessment_model_performance()
