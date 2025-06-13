@@ -1,7 +1,5 @@
 import logging
-from typing import Optional, List
 
-import nltk
 import pandas as pd
 from pandas import DataFrame
 
@@ -12,39 +10,11 @@ class DataPreparation:
     def __init__(
         self,
         path_to_data_for_training: str = "train.csv",
-        nltk_resources: Optional[List[str]] = None,
     ) -> None:
         self.training_data = self._download_data_for_training(
             path_to_data_for_training
         )
         self._add_binary_label()
-        self.nltk_resources = (
-            nltk_resources
-            if nltk_resources is not None
-            else ["punkt", "stopwords", "wordnet"]
-        )
-
-    @staticmethod
-    def download_nltk_resources(resources: List[str]) -> bool:
-        """
-        Downloads specified NLTK resources.
-
-        Parameters:
-        resources (Optional[List[str]]): A list of NLTK resource names to
-                                         download.
-
-        This method logs the download process and ensures that the required
-        NLTK resources are available for text processing tasks.
-        """
-        try:
-            for resource in resources:
-                logger.info(f"Downloading resource: {resource}")
-                nltk.download(resource)
-            logger.info("NLTK resources downloaded successfully.")
-            return True
-        except Exception as exc:
-            logger.error(f"Failed to download NLTK resource. Exception: {exc}")
-            raise exc
 
     @staticmethod
     def _download_data_for_training(path: str) -> DataFrame:
