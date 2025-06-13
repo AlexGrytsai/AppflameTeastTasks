@@ -7,15 +7,8 @@ logger = logging.getLogger(__name__)
 
 
 class NLTKResources:
-    def __init__(self, nltk_resources: Optional[List[str]] = None) -> None:
-        self.nltk_resources = (
-            nltk_resources
-            if nltk_resources is not None
-            else ["punkt", "stopwords", "wordnet"]
-        )
-
     @staticmethod
-    def download_nltk_resources(resources: List[str]) -> bool:
+    def download_nltk_resources(resources: Optional[List[str]] = None) -> bool:
         """
         Downloads specified NLTK resources.
 
@@ -26,6 +19,8 @@ class NLTKResources:
         This method logs the download process and ensures that the required
         NLTK resources are available for text processing tasks.
         """
+        if not resources:
+            resources = ["punkt", "stopwords", "wordnet"]
         try:
             for resource in resources:
                 logger.info(f"Downloading resource: {resource}")
