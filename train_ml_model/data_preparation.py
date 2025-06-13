@@ -109,6 +109,15 @@ class DataPreparation:
         logger.info(f"Test data shape: {self.x_test.shape[0]}")
 
     def vectorize_data(self) -> None:
+        """
+        Vectorizes the preprocessed training and test datasets using
+        scikit-learn's `TfidfVectorizer` class.
+
+        The function logs the start and completion of the vectorization process.
+
+        Returns:
+        None
+        """
         logger.info("Vectorizing data")
 
         x_train_preprocessed, x_test_preprocessed = self._preprocess_datasets()
@@ -120,6 +129,17 @@ class DataPreparation:
         logger.info("Data vectorized successfully")
 
     def _preprocess_datasets(self) -> Tuple[DataFrame, DataFrame]:
+        """
+        Applies text preprocessing to the training and test datasets.
+
+        This method processes the `x_train` and `x_test` datasets by applying
+        the `_preprocess_text` method to each entry. It logs the start and
+        completion of the preprocessing process.
+
+        Returns:
+        Tuple[DataFrame, DataFrame]: A tuple containing the preprocessed
+                                     training and test datasets.
+        """
         logger.info("Preprocessing datasets")
         x_train_preprocessed = self.x_train.apply(self._preprocess_text)
         x_test_preprocessed = self.x_test.apply(self._preprocess_text)
