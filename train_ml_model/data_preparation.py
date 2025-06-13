@@ -1,6 +1,8 @@
 import logging
+import re
 from typing import List, Set, Optional
 
+import nltk
 import pandas as pd
 from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
@@ -100,3 +102,34 @@ class DataPreparation:
 
         logger.info(f"Train data shape: {self.x_train.shape[0]}")
         logger.info(f"Test data shape: {self.x_test.shape[0]}")
+
+    def preprocess_datasets(self):
+        logger.info("Preprocessing datasets")
+        self.x_train = self.x_train.apply(self._preprocess_text)
+        self.x_test = self.x_test.apply(self._preprocess_text)
+
+    def _preprocess_text(self, text: str) -> str:
+        clean_text = self._clean_text(text)
+        tokens = self._tokenize_text(clean_text)
+        lemmatized_tokens = self._lemmatize_text(tokens)
+
+        return " ".join(lemmatized_tokens)
+
+    @staticmethod
+    def _clean_text(text: str) -> str:
+        text = text.lower()
+
+        text = re.sub(r"http\S+|www\S+|https\S+", "", text, flags=re.MULTILINE)
+
+        text = re.sub(r"[^\w\s]", "", text)
+
+        text = re.sub(r"\d+", "", text)
+
+        return text
+
+    @staticmethod
+    def _tokenize_text(text: str) -> List[str]:
+        return nltk.word_tokenize(text)
+
+    def _lemmatize_text(self, tokens: List[str]) -> List[str]:
+        return [self.lemmatizer.lemmatize(word) for word in tokens]
