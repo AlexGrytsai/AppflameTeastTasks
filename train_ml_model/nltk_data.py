@@ -20,7 +20,7 @@ class NLTKResources:
         NLTK resources are available for text processing tasks.
         """
         if not resources:
-            resources = ["punkt", "stopwords", "wordnet"]
+            resources = ["punkt", "punkt_tab", "stopwords", "wordnet"]
         try:
             for resource in resources:
                 logger.info(f"Downloading resource: {resource}")
