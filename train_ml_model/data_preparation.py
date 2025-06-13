@@ -21,12 +21,12 @@ class DataPreparation:
         lemmatizer: Optional[WordNetLemmatizer] = None,
         vectorizer: Optional[TfidfVectorizer] = None,
     ) -> None:
-        self.training_data = self._download_data_for_training(
+        self._training_data = self._download_data_for_training(
             path_to_data_for_training
         )
-        self.stop_words = stop_words or set(stopwords.words("english"))
-        self.lemmatizer = lemmatizer or WordNetLemmatizer()
-        self.vectorizer = vectorizer or TfidfVectorizer()
+        self._stop_words = stop_words or set(stopwords.words("english"))
+        self._lemmatizer = lemmatizer or WordNetLemmatizer()
+        self._vectorizer = vectorizer or TfidfVectorizer()
         self.x_train = None
         self.x_test = None
         self.y_train = None
@@ -66,10 +66,10 @@ class DataPreparation:
         None
         """
         logger.info("Adding binary label")
-        self.training_data["toxic_binary"] = (
-            self.training_data[toxicity_list_column].sum(axis=1) > 0
+        self._training_data["toxic_binary"] = (
+            self._training_data[toxicity_list_column].sum(axis=1) > 0
         ).astype(int)
-        logger.info(f"Total number of toxic labels: {len(self.training_data)}")
+        logger.info(f"Total number of toxic labels: {len(self._training_data)}")
 
     def separate_data_into_train_and_test(
         self,
@@ -98,8 +98,8 @@ class DataPreparation:
 
         self.x_train, self.x_test, self.y_train, self.y_test = (
             train_test_split(
-                self.training_data["comment_text"],
-                self.training_data["toxic_binary"],
+                self._training_data["comment_text"],
+                self._training_data["toxic_binary"],
                 test_size=test_size,
                 random_state=random_state,
             )
@@ -121,10 +121,10 @@ class DataPreparation:
         logger.info("Vectorizing data")
 
         x_train_preprocessed, x_test_preprocessed = self._preprocess_datasets()
-        self.x_train_vectorized = self.vectorizer.fit_transform(
+        self.x_train_vectorized = self._vectorizer.fit_transform(
             x_train_preprocessed
         )
-        self.x_test_vectorized = self.vectorizer.transform(x_test_preprocessed)
+        self.x_test_vectorized = self._vectorizer.transform(x_test_preprocessed)
 
         logger.info("Data vectorized successfully")
 
@@ -211,7 +211,7 @@ class DataPreparation:
         Returns:
         List[str]: A list of lemmatized word tokens.
         """
-        return [self.lemmatizer.lemmatize(word) for word in tokens]
+        return [self._lemmatizer.lemmatize(word) for word in tokens]
 
     def _apply_text_preprocessing(self):
         self.x_train = self.x_train.apply(self._preprocess_text)
