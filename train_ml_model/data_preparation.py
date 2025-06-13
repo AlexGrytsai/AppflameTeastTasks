@@ -104,6 +104,15 @@ class DataPreparation:
         logger.info(f"Test data shape: {self.x_test.shape[0]}")
 
     def preprocess_datasets(self):
+        """
+        Preprocesses the training and test datasets by applying the
+        `_preprocess_text` method to each comment in the datasets.
+
+        The method logs the start and end of the preprocessing process.
+
+        Returns:
+        None
+        """
         logger.info("Preprocessing datasets")
         self.x_train = self.x_train.apply(self._preprocess_text)
         self.x_test = self.x_test.apply(self._preprocess_text)
@@ -152,10 +161,10 @@ class DataPreparation:
     def _tokenize_text(text: str) -> List[str]:
         """
         Tokenizes a string into a list of words using NLTK's word tokenizer.
-    
+
         Parameters:
         text (str): The string to be tokenized.
-    
+
         Returns:
         List[str]: A list of word tokens extracted from the input string.
         """
