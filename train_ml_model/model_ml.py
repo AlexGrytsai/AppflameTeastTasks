@@ -26,6 +26,6 @@ class ModelML:
         logger.info("Evaluating model performance")
 
         logger.info(
-            "Classification report: \n%s",
+            f"Classification report for {self.model.__class__.__name__}:\n%s",
             classification_report(self.data_for_training.y_test, self.predict),
         )
