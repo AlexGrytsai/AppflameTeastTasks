@@ -69,7 +69,9 @@ class DataPreparation:
         self._training_data["toxic_binary"] = (
             self._training_data[toxicity_list_column].sum(axis=1) > 0
         ).astype(int)
-        logger.info(f"Total number of toxic labels: {len(self._training_data)}")
+        logger.info(
+            f"Total number of toxic labels: {len(self._training_data)}"
+        )
 
     def separate_data_into_train_and_test(
         self,
@@ -124,7 +126,9 @@ class DataPreparation:
         self.x_train_vectorized = self._vectorizer.fit_transform(
             x_train_preprocessed
         )
-        self.x_test_vectorized = self._vectorizer.transform(x_test_preprocessed)
+        self.x_test_vectorized = self._vectorizer.transform(
+            x_test_preprocessed
+        )
 
         logger.info("Data vectorized successfully")
 
