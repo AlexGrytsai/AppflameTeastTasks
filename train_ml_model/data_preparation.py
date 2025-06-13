@@ -41,6 +41,7 @@ class DataPreparation:
         Returns:
             None
         """
+        logger.info("Adding binary label")
         self.training_data["toxic_binary"] = (
             self.training_data[
                 [
@@ -54,3 +55,4 @@ class DataPreparation:
             ].sum(axis=1)
             > 0
         ).astype(int)
+        logger.info(f"Total number of toxic labels: {len(self.training_data)}")
